@@ -5,8 +5,11 @@
   - name: i want to install apache2 
     apt: 
        name: apache2 
-       state: present
+       state: present 
+    when: ansible_os_family =="Debian"
+
   - name: i want start apache2 
     service:
        name: apache2 
        state: restarted        
+    when: ansible_os_family =="Debian"   
