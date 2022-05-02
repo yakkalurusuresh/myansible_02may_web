@@ -1,8 +1,12 @@
 --- 
 - hosts: all 
+  become: yes 
   tasks: 
-   - name: install webservers
+   - name: install webservers 
      apt: 
        name: apache2
        state: present 
-       update_cache: yes 
+   - name: install tree 
+     apt: 
+       name: tree 
+       state: present 
