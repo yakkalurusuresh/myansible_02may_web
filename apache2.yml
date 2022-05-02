@@ -9,4 +9,4 @@
   - name: i want start apache2 
     service:
        name: apache2 
-       state: restart        
+       state: restarted        
