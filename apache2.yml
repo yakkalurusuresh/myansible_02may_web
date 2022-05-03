@@ -16,9 +16,9 @@
     when: ansible_os_family =="Debian"
 
 
-  - name: i want to install redhat   
+  - name: i want to install webserver on redhat nodes   
     yum: 
-      name: redhat 
+      name: httpd 
       state: present 
     when: ansible_os_family =="Redhat" 
 
