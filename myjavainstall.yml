@@ -2,7 +2,7 @@
 - hosts: mywebservers
   become: yes 
   tasks: 
-  - name: inatll java on ubuntu 
+  - name: install java on ubuntu 
     apt: 
      name: "{{myjavapackonubuntu}}"
      state: present 
