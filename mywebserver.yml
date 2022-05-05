@@ -1,6 +1,7 @@
 --- 
 - hosts: all 
   become: yes 
+  update_cache: yes 
   tasks: 
    - name: install webservers 
      apt: 
