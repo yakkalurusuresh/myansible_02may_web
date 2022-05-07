@@ -13,8 +13,8 @@
     copy:
          src: mystaticfile.html
          dest: /var/www/html/index.html
-
-
+    notify: restartwebserver
+     
   - name: i want to copy dynamic file inot ansible nodes  side
     template:
         src: myindex.j2
