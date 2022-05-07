@@ -24,7 +24,7 @@
       dest: //home/ubuntu/jenkins.war
       force_basic_auth: yes 
 
-   - name: i want to create a folder
+   - name: i want to create folder
      file: 
        path: /home/ubuntu/myfolder
        state: directory
