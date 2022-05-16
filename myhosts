@@ -6,6 +6,9 @@
 172.31.31.73
 172.31.24.46
 
+[myapplicationservers]
+172.31.34.167
+
 
 [mywebservers:vars]
 myvar= value
@@ -15,5 +18,4 @@ myjavapackonubuntu= openjdk-8-jre
 myjavapackonredhat= java-1.8.0-openjdk
 
 
-[myapplicationservers]
-172.31.23.216
+
